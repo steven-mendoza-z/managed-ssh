@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "managed-ssh"
+version = "0.1.0"
+description = "CLI to manage SSH aliases (hosts and targets) and run ssh/scp through aliases."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+  { name = "Steven Mendoza" }
+]
+keywords = []
+
+dependencies = [
+  "click==8.2.1",
+  "colorama==0.4.6",
+  "inquirerpy==0.3.4",
+  "pfzy==0.3.4",
+  "prompt_toolkit==3.0.51",
+  "PyYAML==6.0.2",
+  "wcwidth==0.2.13"
+]
+
+[project.urls]
+Homepage = "https://github.com/steven-mendoza-z/managed-ssh"
+Documentation = "https://github.com/steven-mendoza-z/managed-ssh"
+Source = "https://github.com/steven-mendoza-z/managed-ssh"
+Issues = "https://github.com/steven-mendoza-z/managed-ssh/issues"
+
+[project.scripts]
+mssh = "mssh.cli:main"
+
+[tool.setuptools.packages.find]
+exclude = ["tests*", "docs*", "workspace*", "venv*"]
