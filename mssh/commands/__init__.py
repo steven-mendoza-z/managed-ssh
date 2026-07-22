@@ -1,4 +1,4 @@
-from mssh.commands.access_copy import access, copy
+from mssh.commands.access_copy import access, copy, remote_run
 from mssh.commands.alias_commands import (
     delete_alias_command,
     list_aliases,
@@ -16,6 +16,7 @@ from mssh.commands.key_commands import keygen_command
 COMMANDS = [
     access,
     copy,
+    remote_run,
     save_host_alias,
     save_target_alias,
     save,

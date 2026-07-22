@@ -4,15 +4,42 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "managed-ssh"
-version = "0.1.0"
-description = "CLI to manage SSH aliases (hosts and targets) and run ssh/scp through aliases."
+version = "0.1.1"
+description = "User-friendly SSH manager CLI for saving destinations and using them with ssh, scp, and remote commands."
 readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "MIT" }
 authors = [
   { name = "Steven Mendoza" }
 ]
-keywords = []
+keywords = [
+  "ssh",
+  "scp",
+  "cli",
+  "aliases",
+  "devops",
+  "sysadmin",
+  "remote-access",
+  "openssh"
+]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Intended Audience :: System Administrators",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: System :: Systems Administration",
+  "Topic :: Utilities"
+]
 
 dependencies = [
   "click==8.2.1",
